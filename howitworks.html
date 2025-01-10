@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>How it Works - SnapHire</title>
+        <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css"
+            rel="stylesheet"
+        />
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+        <style>
+            .brand-yellow {
+                background-color: #ffd700;
+            }
+            .brand-yellow-text {
+                color: #ffd700;
+            }
+            .step-card {
+                transition: transform 0.3s ease;
+            }
+            .step-card:hover {
+                transform: translateY(-5px);
+            }
+            .feature-icon {
+                font-size: 2.5rem;
+                color: #ffd700;
+            }
+            @media (max-width: 768px) {
+                .mobile-nav-toggle {
+                    position: absolute;
+                    right: 20px;
+                    top: 15px;
+                }
+                nav .flex.space-x-6 {
+                    flex-direction: column;
+                    position: absolute;
+                    top: 60px;
+                    left: 0;
+                    width: 100%;
+                    background-color: #ffd700;
+                    padding: 15px;
+                }
+            }
+        </style>
+    </head>
+    <body class="bg-white">
+        <!-- Navigation -->
+        <nav class="fixed w-full shadow-md z-50 brand-yellow">
+            <div class="container mx-auto px-6 py-3 flex justify-between items-center">
+                <a href="index.html" class="text-black font-bold text-xl">SnapHire</a>
+                <div class="flex space-x-6">
+                    <a href="index.html" class="text-black hover:text-gray-700">Find Photographers</a>
+                    <a href="#" class="text-black hover:text-gray-700">How it Works</a>
+                    <a href="login.html" class="text-black hover:text-gray-700">Login</a>
+                    <a href="signup.html" class="join-btn">Join Now</a>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Main Content -->
+        <div class="container mx-auto px-4 pt-24">
+            <!-- Header Section -->
+            <div class="text-center mb-16">
+                <h1 class="text-4xl font-bold mb-4">How SnapHire Works</h1>
+                <p class="text-xl text-gray-600">Your journey to finding the perfect photographer in 4 simple steps</p>
+            </div>
+
+            <!-- Steps Section -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
+                <!-- Step 1 -->
+                <div class="step-card bg-white rounded-lg shadow-lg p-6 text-center">
+                    <div class="feature-icon mb-4">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">1. Search</h3>
+                    <p class="text-gray-600">Enter your location and browse through our curated list of professional photographers</p>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="step-card bg-white rounded-lg shadow-lg p-6 text-center">
+                    <div class="feature-icon mb-4">
+                        <i class="fas fa-user-check"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">2. Choose</h3>
+                    <p class="text-gray-600">Compare portfolios, reviews, and pricing to find your perfect match</p>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="step-card bg-white rounded-lg shadow-lg p-6 text-center">
+                    <div class="feature-icon mb-4">
+                        <i class="fas fa-calendar-check"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">3. Book</h3>
+                    <p class="text-gray-600">Schedule your session directly through our secure booking system</p>
+                </div>
+
+                <!-- Step 4 -->
+                <div class="step-card bg-white rounded-lg shadow-lg p-6 text-center">
+                    <div class="feature-icon mb-4">
+                        <i class="fas fa-camera"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">4. Capture</h3>
+                    <p class="text-gray-600">Meet your photographer and create lasting memories together</p>
+                </div>
+            </div>
+
+            <!-- Features Section -->
+            <div class="bg-gray-50 rounded-xl p-8 mb-16">
+                <h2 class="text-3xl font-bold text-center mb-12">Why Choose SnapHire?</h2>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Feature 1 -->
+                    <div class="flex items-start space-x-4">
+                        <div class="feature-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold mb-2">Verified Professionals</h3>
+                            <p class="text-gray-600">All photographers are thoroughly vetted and verified</p>
+                        </div>
+                    </div>
+
+                    <!-- Feature 2 -->
+                    <div class="flex items-start space-x-4">
+                        <div class="feature-icon">
+                            <i class="fas fa-dollar-sign"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold mb-2">Secure Payments</h3>
+                            <p class="text-gray-600">Payment is only released when you're satisfied with the service</p>
+                        </div>
+                    </div>
+
+                    <!-- Feature 3 -->
+                    <div class="flex items-start space-x-4">
+                        <div class="feature-icon">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold mb-2">Genuine Reviews</h3>
+                            <p class="text-gray-600">Read real reviews from verified customers</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CTA Section -->
+            <div class="text-center bg-gray-900 text-white rounded-xl p-12 mb-16">
+                <h2 class="text-3xl font-bold mb-4">Ready to Find Your Photographer?</h2>
+                <p class="text-xl mb-8">Join thousands of satisfied customers who found their perfect photographer on SnapHire</p>
+                <a href="signup.html" class="brand-yellow text-black font-bold py-3 px-8 rounded-lg inline-block hover:opacity-90 transition-opacity">
+                    Get Started Now
+                </a>
+            </div>
+
+            <!-- FAQ Section -->
+            <div class="mb-16">
+                <h2 class="text-3xl font-bold text-center mb-8">Frequently Asked Questions</h2>
+                <div class="max-w-3xl mx-auto space-y-4">
+                    <!-- FAQ Item 1 -->
+                    <div class="border rounded-lg p-4">
+                        <h3 class="font-bold mb-2">How do I pay for the photography session?</h3>
+                        <p class="text-gray-600">Payment is handled securely through our platform. You'll only be charged after confirming your booking, and the payment is held in escrow until the session is completed.</p>
+                    </div>
+
+                    <!-- FAQ Item 2 -->
+                    <div class="border rounded-lg p-4">
+                        <h3 class="font-bold mb-2">What if I need to cancel my booking?</h3>
+                        <p class="text-gray-600">Cancellations made 48 hours before the scheduled session are eligible for a full refund. Please check individual photographer's cancellation policies for specific terms.</p>
+                    </div>
+
+                    <!-- FAQ Item 3 -->
+                    <div class="border rounded-lg p-4">
+                        <h3 class="font-bold mb-2">How do I receive my photos?</h3>
+                        <p class="text-gray-600">Your photographer will upload the edited photos to your private gallery on SnapHire, where you can download them directly or share them with friends and family.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+                // Navigation menu mobile toggle
+                const navToggle = document.createElement('div');
+                navToggle.innerHTML = '☰';
+                navToggle.classList.add('mobile-nav-toggle', 'md:hidden', 'cursor-pointer', 'text-2xl');
+                
+                const navMenu = document.querySelector('nav .flex.space-x-6');
+                navMenu.parentNode.insertBefore(navToggle, navMenu);
+
+                navToggle.addEventListener('click', () => {
+                    navMenu.classList.toggle('hidden');
+                });
+            });
+        </script>
+    </body>
+</html>

@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html lang="en">
     <head>
@@ -11,15 +10,6 @@
             rel="stylesheet"
         />
         <style>
-
-.photographers-grid {
-    display: flex;
-    gap: 16px; /* space between the cards */
-    overflow-x: auto; /* adds horizontal scroll if needed */
-    padding: 20px;
-}
-
-
             .brand-yellow {
                 background-color: #ffd700;
             }
@@ -36,6 +26,32 @@
                 background-size: cover;
                 background-position: center;
             }
+
+            .photographers-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+                gap: 20px;
+                padding: 2rem;
+            }
+
+            .photographer-square-card {
+                border: 1px solid #e2e8f0;
+                border-radius: 10px;
+                overflow: hidden;
+                transition: transform 0.3s ease, box-shadow 0.3s ease;
+            }
+
+            .square-profile-img {
+                width: 100%;
+                height: 300px;
+                object-fit: cover;
+            }
+
+            .card-info {
+                padding: 15px;
+            }
+
+       
         </style>
     </head>
     <body class="bg-white">
@@ -48,14 +64,13 @@
                     <a href="#" class="text-black hover:text-gray-700"
                         >Find Photographers</a
                     >
-                    <a href="How it works.html" class="text-black hover:text-gray-700"
+                    <a href="howitworks.html" class="text-black hover:text-gray-700"
                         >How it Works</a
                     >
-                    <a href="#" class="text-black hover:text-gray-700"
-                        >Sign In</a
+                    <a href="login.html" class="login-btn"
+                        >Login</a
                     >
                     <a href="signup.html" class="join-btn">Join Now</a>
-                    
                 </div>
             </div>
         </nav>
@@ -66,7 +81,7 @@
                     Find professional photographers in a snap
                 </h1>
                 <p class="text-xl mb-8">
-                    Connect with professional photographers in your area
+                    Connect with professional photographers
                 </p>
                 <div class="bg-white rounded-lg p-4 max-w-2xl mx-auto">
                     <div class="flex gap-4">
@@ -74,6 +89,7 @@
                             type="text"
                             placeholder="Location"
                             class="flex-1 p-2 border rounded"
+                            style="color: black;"
                         />
                         <button
                             class="brand-yellow px-6 py-2 rounded font-semibold"
@@ -85,58 +101,304 @@
             </div>
         </div>
 
+        <div class="container mx-auto px-8 pt-12">
+            <h2 class="text-3xl font-bold text-gray-800">Photographers near you: </h2>
+        </div>
+
+
+
+
+
         <div class="container photographers-grid">
-            <!-- Photographer Card 1 -->
+
+
+
             <div class="photographer-square-card">
                 <a href="photographer1.html" class="card-content">
-                    <img src="https://ideogram.ai/assets/progressive-image/balanced/response/lYeQXM4KS1-3Xf6zqzurkw" alt="Sarah Johnson" class="square-profile-img">
+                    <img src="p1.jpeg">
                     <div class="card-info">
-                        <h2>Sarah Johnson</h2>
-                        <p>Wedding Photography</p>
+                        <h2>Arjun Mehta</h2>
+                        <p>Wildlife Photographer</p>
                         <div class="rating">
                             <span class="stars">⭐⭐⭐⭐⭐</span>
-                            <span class="review-count">5.0 (128)</span>
+                            <span class="review-count">4.9 (15.3k reviews)</span>
                         </div>
-                        <p class="location">📍 New York City . 5 min distance</p>
+                        <p class="location">📍 Jaipur</p>
                     </div>
                 </a>
             </div>
 
-            <!-- Additional photographer cards (for demonstration) -->
+
             <div class="photographer-square-card">
                 <a href="photographer2.html" class="card-content">
-                    <img src="https://ideogram.ai/assets/progressive-image/balanced/response/qQLArvAITVWOvAKVadlvYA" alt="Mike Smith" class="square-profile-img">
+                    <img src="p9.jpeg" alt="Priya Kapoor" class="square-profile-img">
                     <div class="card-info">
-                        <h2>Mike Smith</h2>
-                        <p>Portrait Photography</p>
+                        <h2>Priya Kapoor</h2>
+                        <p>Wedding Photographer</p>
                         <div class="rating">
                             <span class="stars">⭐⭐⭐⭐⭐</span>
-                            <span class="review-count">4.9 (98)</span>
+                            <span class="review-count">5.0 (9.8k reviews)</span>
                         </div>
-                        <p class="location">📍 New York City . 14 min distance</p>
+                        <p class="location">📍 Delhi</p>
                     </div>
                 </a>
             </div>
 
             <div class="photographer-square-card">
                 <a href="photographer3.html" class="card-content">
-                    <img src="https://ideogram.ai/assets/progressive-image/balanced/response/WiCNsHikTGGRtnmbA9lK7Q" alt="Emma Davis" class="square-profile-img">
+                    <img src="p2.jpeg" alt="Ravi Sharma" class="square-profile-img">
                     <div class="card-info">
-                        <h2>Emma Davis</h2>
-                        <p>Event Photography</p>
+                        <h2>Ravi Sharma</h2>
+                        <p>Arial and Drone Photographer</p>
                         <div class="rating">
                             <span class="stars">⭐⭐⭐⭐⭐</span>
-                            <span class="review-count">4.8 (156)</span>
+                            <span class="review-count">4.8 (12k reviews)</span>
                         </div>
-                        <p class="location">📍 New York City . 25 min distance</p>
+                        <p class="location">📍 Bangalore</p>
                     </div>
                 </a>
             </div>
-        </div>
-        <footer class="bg-gray-800 text-white py-6">
-            <div class="container mx-auto text-center">
-                <p>&copy; 2024 SnapHire. All rights reserved.</p>
+
+            <div class="photographer-square-card">
+                <a href="photographer4.html" class="card-content">
+                    <img src="p3.jpeg" alt="Karan Patel" class="square-profile-img">
+                    <div class="card-info">
+                        <h2>Karan Patel</h2>
+                        <p>Adventure and Travel Photographer</p>
+                        <div class="rating">
+                            <span class="stars">⭐⭐⭐⭐⭐</span>
+                            <span class="review-count">4.9 (18.2k reviews)</span>
+                        </div>
+                        <p class="location">📍 Manali</p>
+                    </div>
+                </a>
             </div>
-        </footer>
+
+            <div class="photographer-square-card">
+                <a href="photographer5.html" class="card-content">
+                    <img src="p10.jpeg" alt="Annanya Iyer" class="square-profile-img">
+                    <div class="card-info">
+                        <h2>Annanya Iyer</h2>
+                        <p>Fine Art Photographer</p>
+                        <div class="rating">
+                            <span class="stars">⭐⭐⭐⭐⭐</span>
+                            <span class="review-count">5.0 (6.7k reviews)</span>
+                        </div>
+                        <p class="location">📍 Chennai</p>
+                    </div>
+                </a>
+            </div>
+
+
+            <div class="photographer-square-card">
+                <a href="photographer6.html" class="card-content">
+                    <img src="p11.jpeg" alt="Meera Rao" class="square-profile-img">
+                    <div class="card-info">
+                        <h2>Meera Rao</h2>
+                        <p>Documentary Photographer</p>
+                        <div class="rating">
+                            <span class="stars">⭐⭐⭐⭐⭐</span>
+                            <span class="review-count">4.8 (10.5k reviews)</span>
+                        </div>
+                        <p class="location">📍 Hyderabad</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="photographer-square-card">
+                <a href="photographer7.html" class="card-content">
+                    <img src="p4.jpeg" alt="Nishant Joshi" class="square-profile-img">
+                    <div class="card-info">
+                        <h2>Nishant Joshi</h2>
+                        <p>Street Photographer</p>
+                        <div class="rating">
+                            <span class="stars">⭐⭐⭐⭐⭐</span>
+                            <span class="review-count">5.0 (7.2k reviews)</span>
+                        </div>
+                        <p class="location">📍 Mumbai</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="photographer-square-card">
+                <a href="photographer8.html" class="card-content">
+                    <img src="p12.jpeg" alt="Sanjana Varma" class="square-profile-img">
+                    <div class="card-info">
+                        <h2>Sanjana Varma</h2>
+                        <p>Fashion Photographer</p>
+                        <div class="rating">
+                            <span class="stars">⭐⭐⭐⭐⭐</span>
+                            <span class="review-count">5.0 (15.6k reviews)</span>
+                        </div>
+                        <p class="location">📍 Delhi</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="photographer-square-card">
+                <a href="photographer9.html" class="card-content">
+                    <img src="p5.jpeg" alt="Aditya Singh" class="square-profile-img">
+                    <div class="card-info">
+                        <h2>Aditya Singh</h2>
+                        <p>Architectural Photographer</p>
+                        <div class="rating">
+                            <span class="stars">⭐⭐⭐⭐⭐</span>
+                            <span class="review-count">4.9 (8.5k reviews)</span>
+                        </div>
+                        <p class="location">📍 Ahmedabad</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="photographer-square-card">
+                <a href="photographer10.html" class="card-content">
+                    <img src="p13.jpeg" alt="Ishita Das" class="square-profile-img">
+                    <div class="card-info">
+                        <h2>Ishita Das</h2>
+                        <p>Food and Beverage Photographer</p>
+                        <div class="rating">
+                            <span class="stars">⭐⭐⭐⭐⭐</span>
+                            <span class="review-count">5.0 (6.5k reviews)</span>
+                        </div>
+                        <p class="location">📍 Kolkata</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="photographer-square-card">
+                <a href="photographer12.html" class="card-content">
+                    <img src="p14.jpeg" alt="Neha Aggarwal" class="square-profile-img">
+                    <div class="card-info">
+                        <h2>Neha Aggarwal</h2>
+                        <p>Lifestyle Photography</p>
+                        <div class="rating">
+                            <span class="stars">⭐⭐⭐⭐⭐</span>
+                            <span class="review-count">4.8 (9.2k reviews)</span>
+                        </div>
+                        <p class="location">📍 Chandigarh</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="photographer-square-card">
+                <a href="photographer11.html" class="card-content">
+                    <img src="p6.jpeg" alt="Rohit Nair" class="square-profile-img">
+                    <div class="card-info">
+                        <h2>Rohit Nair</h2>
+                        <p>Event Photography</p>
+                        <div class="rating">
+                            <span class="stars">⭐⭐⭐⭐⭐</span>
+                            <span class="review-count">4.8 (11k reviews)</span>
+                        </div>
+                        <p class="location">📍 Kochi</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="photographer-square-card">
+                <a href="photographer13.html" class="card-content">
+                    <img src="p7.jpeg" alt="Vikram Choudary" class="square-profile-img">
+                    <div class="card-info">
+                        <h2>Vikram Choudary</h2>
+                        <p>Monochrome Photographer</p>
+                        <div class="rating">
+                            <span class="stars">⭐⭐⭐⭐⭐</span>
+                            <span class="review-count">5.0 (7.5k reviews)</span>
+                        </div>
+                        <p class="location">📍 Pune</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="photographer-square-card">
+                <a href="photographer14.html" class="card-content">
+                    <img src="p15.jpeg" alt="Aarti Jain" class="square-profile-img">
+                    <div class="card-info">
+                        <h2>Aarti Jain</h2>
+                        <p>Conceptual Photographer</p>
+                        <div class="rating">
+                            <span class="stars">⭐⭐⭐⭐⭐</span>
+                            <span class="review-count">4.9 (8.2k reviews)</span>
+                        </div>
+                        <p class="location">📍 Delhi</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="photographer-square-card">
+                <a href="photographer15.html" class="card-content">
+                    <img src="p8.jpeg" alt="Devansh Kapoor" class="square-profile-img">
+                    <div class="card-info">
+                        <h2>Devansh Kapoor</h2>
+                        <p>Sports Photographer</p>
+                        <div class="rating">
+                            <span class="stars">⭐⭐⭐⭐⭐</span>
+                            <span class="review-count">4.8 (9.7k reviews)</span>
+                        </div>
+                        <p class="location">📍 Lucknow</p>
+                    </div>
+                </a>
+            </div>
+
+
+        </div>
+
+
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+
+                const locationInput = document.querySelector('input[placeholder="Location"]');
+                const searchButton = document.querySelector('button');
+                const photographerCards = document.querySelectorAll('.photographer-square-card');
+
+                searchButton.addEventListener('click', () => {
+                    const searchTerm = locationInput.value.toLowerCase();
+                    
+                    photographerCards.forEach(card => {
+                        const locationText = card.querySelector('.location').textContent.toLowerCase();
+                        
+                        if (searchTerm === '' || locationText.includes(searchTerm)) {
+                            card.style.display = 'block';
+                        } else {
+                            card.style.display = 'none';
+                        }
+                    });
+                });
+
+
+                const navToggle = document.createElement('div');
+                navToggle.innerHTML = '☰';
+                navToggle.classList.add('mobile-nav-toggle', 'md:hidden', 'cursor-pointer', 'text-2xl');
+                
+                const navMenu = document.querySelector('nav .flex.space-x-6');
+                navMenu.parentNode.insertBefore(navToggle, navMenu);
+
+                navToggle.addEventListener('click', () => {
+                    navMenu.classList.toggle('hidden');
+                });
+
+
+                document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                    anchor.addEventListener('click', function (e) {
+                        e.preventDefault();
+                        document.querySelector(this.getAttribute('href')).scrollIntoView({
+                            behavior: 'smooth'
+                        });
+                    });
+                });
+
+
+                photographerCards.forEach(card => {
+                    card.addEventListener('mouseenter', () => {
+                        card.style.transform = 'scale(1.05)';
+                        card.style.transition = 'transform 0.3s ease';
+                    });
+                    
+                    card.addEventListener('mouseleave', () => {
+                        card.style.transform = 'scale(1)';
+                    });
+                });
+            });
+        </script>
     </body>
 </html>

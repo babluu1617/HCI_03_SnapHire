@@ -1,0 +1,128 @@
+/* styles.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Yellow Header */
+.yellow-header {
+    background: #FFD700;
+    padding: 1rem 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    text-decoration: none;
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.nav-links a {
+    color: #333;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.nav-links a:hover {
+    color: #666;
+}
+
+
+
+
+
+/* Photographers Grid */
+.photographers-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 2rem 0;
+}
+
+.photographer-square-card {
+    background: white;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+}
+
+.photographer-square-card:hover {
+    transform: translateY(-5px);
+}
+
+.card-content {
+    text-decoration: none;
+    color: inherit;
+}
+
+.square-profile-img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.card-info {
+    padding: 1.5rem;
+}
+
+.card-info h2 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.card-info p {
+    color: #666;
+    margin-bottom: 0.5rem;
+}
+
+.rating {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.stars {
+    color: #FFD700;
+}
+
+.review-count {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.location {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #666;
+    font-size: 0.9rem;
+}
+
